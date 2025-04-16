@@ -1,0 +1,22 @@
+
+{%extends "index.html" %}
+{%block title%} Contact {%endblock%}
+{%block header%} <h1>Contact</h1> {%endblock%}
+{%block navbar%}
+<ul>
+<li><a href="{{url_for('index')}}">Home</a></li>
+<li><a href="{{url_for('about')}}">About</a></li>
+<li><a href="{{url_for('projects')}}">Projects</a></li>
+<li><a href="{{ url_for('static', filename='resume.pdf') }}" target="_blank">Resume</a></li>
+<li><a href="{{url_for('contact')}}">Contact</a></li>
+</ul>
+{%endblock%}
+
+{%block content%}
+<div class="contact-container">
+    <p><img src="static/images/email.png" class="icon"> Jislava27@gmail.com</p>
+    <p><img src="static/images/phone.png" class="icon"> 520-934-2699</p>
+    <p><img src="static/images/linkedin.png" class="icon"><a href="https://www.linkedin.com/in/jose-islava-9463412b9/"> LinkedIn</a></p>
+    <p><img src="static/images/github.png" class="icon"><a href="https://github.com/izzythegreatxx" target="_blank"> GitHub</a></p>
+</div>
+{%endblock%}
