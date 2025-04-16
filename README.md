@@ -1,4 +1,4 @@
-# Jose Islava's Developer Portfolio
+# Developer Portfolio
 
 Welcome to my personal portfolio website! This project showcases my journey into software development, my technical skills, and the projects I've built along the way.
 
