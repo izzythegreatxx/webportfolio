@@ -302,3 +302,18 @@ footer {
     background-color: #e0e0e0;
     padding: 15px 0;
 }
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    body {
+        background-size: contain;
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-color: #0b0b10;
+    }
+
+    p {
+        color: #e0e0e0;
+    }
+}
