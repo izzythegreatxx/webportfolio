@@ -13,7 +13,7 @@
 
 <!--- content of the page-->
 {%block content%}
-{%block header%} <h1>About Me</h1> {%endblock%}
+
 <div class="container-bg">
     <p>
         Hi, my name is Jose Islava. My journey into software development has been anything but traditional. I don’t come from a technical background — in fact, I come from construction and before that I was in the military. 
@@ -64,6 +64,10 @@
                 <figure class="image-item">
                     <img src="{{ url_for('static', filename='images/hiking.jpg') }}" alt="Outdoors" class="image-item">
                     <figcaption>Hiking in Southern Arizona</figcaption>
+                </figure>
+                <figure class="image-item">
+                    <img src="{{ url_for('static', filename='images/grad.png') }}" alt="University of Arizona" class="image-item">
+                    <figcaption>Graduation from The University of Arizona</figcaption>
                 </figure>
             </div>
             <button class="carousel-btn right" onclick="scrollCarousel(1)">&#8594;</button>

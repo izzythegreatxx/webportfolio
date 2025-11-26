@@ -3,47 +3,72 @@
 
 {% block content %}
 <header class="mb-5">
-    <h1 class="display-4 ">Jose Islava</h1>
     <p class="lead">
-        Software Engineer with a strong foundation in Python, Flask, and web development.
+        Backend-leaning Software Developer specializing in Python, Flask, and modern web development, 
+        with a strong interest in full-stack and cloud-based applications.
     </p>
 </header>
 
+<!-- About + Quick Info row -->
 <section class="mb-5">
     <div class="row">
         <div class="col-md-8">
-            <div class="p-4 bg-white shadow-sm rounded about-box">
+            <div class="p-4 shadow-sm rounded about-box">
                 <h2 class="h4 fw-bold mb-3">About Me</h2>
                 <p>
-                    I enjoy the outdoors like hiking, fishing, and playing guitar, and I'm always looking for new
-                    challenges. I’m a firm believer in being a lifelong student.
+                    I’m a U.S. Marine Corps veteran turned Software Developer who enjoys solving real problems with clean,
+                    maintainable code. Outside of tech, I like hiking, fishing, and playing guitar, and I’m always looking
+                    for new challenges.
                 </p>
                 <p>
-                    I’m a graduate of The University of Arizona, where I earned a degree in Applied Computing with
-                    an emphasis in Software Development.
+                    I graduated from The University of Arizona with a Bachelor’s in Applied Computing (Software Development),
+                    where I built projects using Python, Flask, SQL, and web technologies.
                 </p>
                 <p>
-                    To learn more about me and how I got into software, check out my journey
+                    To read more about my journey into software and how I transitioned into tech, check out my story
                     <a href="{{ url_for('about') }}">here</a>.
                 </p>
             </div>
         </div>
 
         <div class="col-md-4 mt-4 mt-md-0">
-            <div class="p-4 bg-white shadow-sm rounded h-100 quick-info">
+            <div class="p-4 shadow-sm rounded h-100 quick-info">
                 <h2 class="h5 fw-bold mb-3">Quick Info</h2>
                 <ul class="list-unstyled mb-0">
-                    <li><strong>Location:</strong> Tucson, AZ</li>
-                    <li><strong>Focus:</strong> Backend & full-stack development</li>
-                    <li><strong>Tech:</strong> Python, Flask, SQL, AWS, Bootstrap</li>
-                    <li><strong>Open to:</strong> Backend, full-stack, and front-end roles</li>
+                        <li><strong>Location:</strong> Tucson, AZ</li>
+                        <li><strong>Role:</strong> Software Developer</li>
+                        <li><strong>Specialty:</strong> Backend / APIs / Cloud</li>
+                        <li><strong>Education:</strong> B.A.S. in Applied Computing (UA)</li>
+                        <li><strong>Open to:</strong> Backend, full-stack, & cloud roles</li>
                 </ul>
                 <div class="mt-3">
                     <a href="{{ url_for('static', filename='resume.pdf') }}" target="_blank"
                        class="btn btn-primary w-100 mb-2">View Resume</a>
-                    <a href="{{ url_for('projects') }}" class="btn btn-outline-dark w-100">View Projects</a>
+                    <a href="{{ url_for('projects') }}" class="btn btn-outline-light w-100">View Projects</a>
                 </div>
             </div>
+        </div>
+    </div>
+</section>
+
+<!-- Tech Stack section -->
+<section class="mb-5">
+    <div class="p-4 shadow-sm rounded about-box">
+        <h2 class="h4 fw-bold mb-3">Tech Stack</h2>
+        <p class="mb-2">Technologies I work with:</p>
+
+        <div class="d-flex flex-wrap gap-2">
+            <span class="badge bg-dark text-light">Python</span>
+            <span class="badge bg-dark text-light">Flask</span>
+            <span class="badge bg-dark text-light">HTML/CSS</span>
+            <span class="badge bg-dark text-light">JavaScript</span>
+            <span class="badge bg-dark text-light">SQL</span>
+            <span class="badge bg-dark text-light">C</span>
+            <span class="badge bg-dark text-light">C#</span>
+            <span class="badge bg-dark text-light">Git</span>
+            <span class="badge bg-dark text-light">Linux</span>
+            <span class="badge bg-dark text-light">Windows</span>
+            <span class="badge bg-dark text-light">AWS</span>
         </div>
     </div>
 </section>

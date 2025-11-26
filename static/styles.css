@@ -67,28 +67,41 @@ p {
     color: #d4d4d4;
 }
 
-/* Make text inside white cards dark and readable */
 .about-box,
 .quick-info {
-    color: #111111;      /* base text color */
+    background-color: #212529 ;
+    color: #f5f5f5;              
+    border-radius: 8px;
 }
 
-/* Paragraphs and list items inside the cards */
+/* Make paragraphs inside readable */
 .about-box p,
-.quick-info li {
-    color: #111111;
+.quick-info p,
+.quick-info li,
+.about-box li {
+    color: #f5f5f5;
 }
 
-/* Headings inside the cards (override global h2 color) */
+/* Headings inside cards */
 .about-box h2,
-.quick-info h2 {
-    color: #111111;
+.quick-info h2,
+.about-box h3,
+.quick-info h3 {
+    color: #ffffff;
 }
 
+/* Link styling inside these cards */
 .about-box a {
-    color: #00bcd4;                  /* cyan accent */
+    color: #00bcd4; /* cyan accent */
+    font-weight: bold;
     text-decoration: none;
 }
+
+.about-box a:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+}
+
 .about-box a:hover {
     color: #ffcc00;
     text-decoration: underline;
@@ -97,7 +110,7 @@ p {
 
 /* Hero / text container */
 .container-bg {
-    background-color: #1e1e1e;
+    background-color: #212529;
     padding: 20px;
     border-radius: 8px;
     margin: 0 auto;
@@ -122,22 +135,7 @@ p {
     text-decoration: underline;
 }
 
-/* Scroll icon */
-.scroll-icon {
-    width: 24px;
-    height: 24px;
-    margin: 20px auto 40px;
-    border: solid #ffcc00;
-    border-width: 0 3px 3px 0;
-    transform: rotate(45deg);
-    cursor: pointer;
-}
 
-.scroll-icon:hover {
-    animation: none;
-    transform: rotate(45deg) scale(1.5);
-    transition: transform 0.3s ease-in-out;
-}
 
 /* Carousel */
 .carousel-container {
@@ -163,13 +161,17 @@ p {
     display: none;
 }
 
-.image-reel img {
-    height: 200px;
+.image-reel img,
+.image-item img {
+    height: 200px;         /* keeps consistent height */
+    width: auto;           /* prevents stretching */
+    object-fit: cover;     /* crops slightly, keeps proportions */
+    border-radius: 10px;
     flex-shrink: 0;
     scroll-snap-align: start;
-    border-radius: 10px;
     transition: transform 0.3s ease;
 }
+
 
 .image-reel img:hover {
     transform: scale(1.05);
@@ -225,7 +227,7 @@ p {
 
 /* Project cards */
 .project-card {
-    background-color: #1e1e1e;
+    background-color: #212529;
     border-radius: 12px;
     padding: 20px;
     margin: 20px 0;
